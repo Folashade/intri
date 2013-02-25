@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @institution.id %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @institution.zipcode %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @institution.name %>
+</p>
+
+<p>
+  <b>Industry code:</b>
+  <%= @institution.industry_code %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @institution.description %>
+</p>
+
+<p>
+  <b>Path to logo:</b>
+  <%= @institution.path_to_logo %>
+</p>
+
+<p>
+  <b>Street 1:</b>
+  <%= @institution.street_1 %>
+</p>
+
+<p>
+  <b>Street 2:</b>
+  <%= @institution.street_2 %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @institution.phone %>
+</p>
+
+<p>
+  <b>Linkedin:</b>
+  <%= @institution.linkedin_id %>
+</p>
+
+<p>
+  <b>Email extention:</b>
+  <%= @institution.email_extention %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @institution.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_institution_path(@institution) %> |
+<%= link_to 'Back', institutions_path %>

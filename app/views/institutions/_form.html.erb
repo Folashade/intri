@@ -1,0 +1,65 @@
+<%= form_for(@institution) do |f| %>
+  <% if @institution.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@institution.errors.count, "error") %> prohibited this institution from being saved:</h2>
+
+      <ul>
+      <% @institution.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br />
+    <%= f.number_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :industry_code %><br />
+    <%= f.number_field :industry_code %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :path_to_logo %><br />
+    <%= f.text_field :path_to_logo %>
+  </div>
+  <div class="field">
+    <%= f.label :street_1 %><br />
+    <%= f.text_field :street_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :street_2 %><br />
+    <%= f.text_field :street_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin_id %><br />
+    <%= f.number_field :linkedin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :email_extention %><br />
+    <%= f.text_field :email_extention %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

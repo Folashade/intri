@@ -1,7 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
-
+gem 'will_paginate'
+gem 'chronic'
+gem 'simple_form'
+gem 'nested_form', :git => 'git://github.com/ryanb/nested_form.git'
+gem 'cancan'
+gem 'validates_timeliness'
+gem 'jquery-rails'
+gem "bcrypt-ruby"  #, :require => "bcrypt"
+gem 'nifty-generators'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -19,6 +27,16 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+
+group :test do
+	gem 'shoulda'
+	gem 'shoulda-matchers'
+	gem 'factory_girl_rails'
+	gem "mocha"
+	gem 'simplecov'
+end
+
 
 gem 'jquery-rails'
 
