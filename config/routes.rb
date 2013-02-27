@@ -1,4 +1,7 @@
 Intri::Application.routes.draw do
+  resources :user_histories
+
+
   resources :institutions
 
   

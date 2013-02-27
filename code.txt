@@ -1,0 +1,3 @@
+rails generate scaffold UserHistory user_id:integer institution_id:integer department_id:integer title:string description:string start_date:date end_date:date verification_status:boolean
+
+in migration default for verif => false

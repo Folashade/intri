@@ -8,13 +8,26 @@ gem 'nested_form', :git => 'git://github.com/ryanb/nested_form.git'
 gem 'cancan'
 gem 'validates_timeliness'
 gem 'jquery-rails'
-gem "bcrypt-ruby"  #, :require => "bcrypt"
+gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'nifty-generators'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 
+
+# Gems used only in testing
+# group :development, :test do
+#   gem 'faker'
+#   gem 'hirb'
+#   gem 'populator3'
+#   gem 'wirble'
+#   gem 'quiet_assets'
+#   gem 'thin'
+#   gem 'better_errors'
+#   gem 'binding_of_caller'
+#   gem 'meta_request'
+# end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,12 +46,13 @@ group :test do
 	gem 'shoulda'
 	gem 'shoulda-matchers'
 	gem 'factory_girl_rails'
-	gem "mocha"
+	gem 'mocha'
 	gem 'simplecov'
+	gem 'factory_girl_rails'
+  gem 'tconsole'
 end
 
 
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

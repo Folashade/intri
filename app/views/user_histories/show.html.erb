@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @user_history.user_id %>
+</p>
+
+<p>
+  <b>Institution:</b>
+  <%= @user_history.institution_id %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @user_history.department_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @user_history.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @user_history.description %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @user_history.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @user_history.end_date %>
+</p>
+
+<p>
+  <b>Verification status:</b>
+  <%= @user_history.verification_status %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_history_path(@user_history) %> |
+<%= link_to 'Back', user_histories_path %>
